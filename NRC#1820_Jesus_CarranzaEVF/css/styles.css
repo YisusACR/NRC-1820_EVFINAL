@@ -1,0 +1,254 @@
+/* -------------------------------
+   Global Styles
+-------------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* -------------------------------
+   Header Section
+-------------------------------- */
+/* Ajustes para el logo en el encabezado */
+header img {
+    max-width: 180px; /* Ajusta el tamaño máximo del logo según lo que desees */
+    height: auto;     /* Mantiene la proporción del logo */
+    display: block;   /* Hace que el logo sea un bloque para facilitar su alineación */
+    margin-left: auto; /* Centra el logo horizontalmente */
+    margin-right: auto; /* Centra el logo horizontalmente */
+    transition: none; /* Elimina cualquier animación */
+}
+
+/* Ajuste en pantallas pequeñas */
+@media (max-width: 768px) {
+    header img {
+        max-width: 150px; /* Ajusta el tamaño para pantallas más pequeñas */
+    }
+}
+
+header {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+header .btn {
+    transition: background-color 0.3s ease-in-out;
+}
+
+header .btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* -------------------------------
+   Navbar
+-------------------------------- */
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* -------------------------------
+   About Section
+-------------------------------- */
+#about {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+}
+
+#about img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#about img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* -------------------------------
+   Services Section
+-------------------------------- */
+#services {
+    padding: 4rem 0;
+}
+
+#services .col-md-4 {
+    margin-bottom: 2rem;
+}
+
+#services h4 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#services i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#services i:hover {
+    transform: scale(1.2);
+    color: #0056b3;
+}
+
+/* -------------------------------
+   Video Section
+-------------------------------- */
+#video {
+    background: linear-gradient(to bottom, #333, #000);
+    color: white;
+    padding: 4rem 0;
+}
+
+#video iframe {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* -------------------------------
+   Contact Section
+-------------------------------- */
+#contact {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+}
+
+#contact input, #contact textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.8rem;
+}
+
+#contact button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+/* -------------------------------
+   Footer Section
+-------------------------------- */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer ul {
+    padding: 0;
+    margin: 1rem 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 0.5rem;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #007bff;
+    transform: translateY(-3px);
+}
+
+footer iframe {
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------
+   Responsive Styles
+-------------------------------- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #services .col-md-4 {
+        margin-bottom: 3rem;
+    }
+
+    footer iframe {
+        height: 200px;
+    }
+}
